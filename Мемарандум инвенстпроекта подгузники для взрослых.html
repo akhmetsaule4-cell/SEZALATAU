@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Инвестиционный проект — Производство подгузников для взрослых | СЭЗ Alatau</title>
+    
+    <meta name="description" content="Инвестиционный проект по производству подгузников для взрослых в СЭЗ «Alatau». IRR 31%, окупаемость 24 мес., господдержка QazIndustry." />
+    
+    <!-- Google Analytics (ЗАМЕНИТЕ G-XXXXXXXXXX) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    
+    <!-- Yandex Metrika (ЗАМЕНИТЕ XXXXXXXX) -->
+    <script>
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0];
+        k.async=1;k.src=r;a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        ym(XXXXXXXX, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/XXXXXXXX" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    
+    <style>
+        /* ===== RESET ===== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "Inter", sans-serif; background: #f8fafc; color: #0b1a33; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* ===== ЛЕНТА КОНФИДЕНЦИАЛЬНОСТИ ===== */
+        .confidential-ribbon {
+            background: #1a2a4a;
+            color: #fbbf24;
+            text-align: center;
+            padding: 6px 0;
+            font-size: 0.7rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-weight: 600;
+            border-bottom: 2px solid #fbbf24;
+        }
+        
+        /* ===== HERO ===== */
+        .hero {
+            background: linear-gradient(135deg, #0b1a33 0%, #1a3a5c 100%);
+            color: #fff;
+            padding: 50px 0 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            background: rgba(251, 191, 36, 0.05);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        .hero .container { position: relative; z-index: 1; }
+        .hero-badge {
+            display: inline-block;
+            background: rgba(251, 191, 36, 0.15);
+            border: 1px solid #fbbf24;
+            color: #fbbf24;
+            padding: 4px 16px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        .hero h1 { font-size: 2.6rem; font-weight: 800; line-height: 1.2; margin-bottom: 12px; }
+        .hero h1 span { color: #fbbf24; }
+        .hero p { font-size: 1.1rem; color: #cbd5e1; max-width: 600px; margin-bottom: 20px; }
+        .hero-stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            margin: 24px 0;
+        }
+        .hero-stats .stat { display: flex; flex-direction: column; }
+        .hero-stats .stat .number { font-size: 1.8rem; font-weight: 700; color: #fbbf24; }
+        .hero-stats .stat .label { font-size: 0.8rem; color: #94a3b8; }
+        
+        .btn-group { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+        .btn-primary { background: #fbbf24; color: #0b1a33; }
+        .btn-primary:hover { background: #f59e0b; transform: translateY(-2px); box-shadow: 0 10px 30px rgba(251, 191, 36, 0.3); }
+        .btn-secondary { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.3); }
+        .btn-secondary:hover { background: rgba(255,255,255,0.1); border-color: #fff; }
+        .btn-pdf { background: #dc2626; color: #fff; }
+        .btn-pdf:hover { background: #b91c1c; transform: translateY(-2px); }
+        .btn-kz { background: #16a34a; color: #fff; }
+        .btn-kz:hover { background: #15803d; transform: translateY(-2px); }
+        
+        /* ===== Секции ===== */
+        section { padding: 50px 0; }
+        .section-title { font-size: 1.8rem; font-weight: 700; margin-bottom: 10px; color: #0b1a33; }
+        .section-subtitle { color: #64748b; font-size: 1rem; margin-bottom: 30px; }
+        .section-title .highlight { color: #d97706; }
+        
+        /* ===== GRID ===== */
+        .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; }
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 20px; }
+        .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; }
+        
+        /* ===== Карточки ===== */
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            border: 1px solid #e9edf2;
+            transition: all 0.3s ease;
+        }
+        .card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.08); }
+        .card .icon { font-size: 2rem; margin-bottom: 10px; display: block; }
+        .card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 6px; }
+        .card p { color: #475569; font-size: 0.92rem; }
+        .card .badge {
+            display: inline-block;
+            background: #dcfce7;
+            color: #166534;
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 2px 12px;
+            border-radius: 12px;
+            margin-top: 6px;
+        }
+        .card .badge-warning {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        .card .badge-gray {
+            background: #f1f5f9;
+            color: #475569;
+        }
+        
+        /* ===== Таблицы ===== */
+        .table-wrap {
+            overflow-x: auto;
+            background: #fff;
+            border-radius: 12px;
+            border: 1px solid #e9edf2;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.92rem;
+            min-width: 500px;
+        }
+        table th {
+            background: #f1f5f9;
+            text-align: left;
+            padding: 12px 16px;
+            font-weight: 600;
+            color: #0b1a33;
+        }
+        table td {
+            padding: 12px 16px;
+            border-top: 1px solid #e9edf2;
+            color: #1e293b;
+        }
+        table tr:hover td { background: #f8fafc; }
+        .win { background: #f0fdf4; font-weight: 600; }
+        .warning { background: #fef3c7; }
+        
+        /* ===== Статусы ===== */
+        .status-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+            margin: 16px 0;
+        }
+        .status-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.92rem;
+            padding: 8px 12px;
+            background: #fff;
+            border-radius: 8px;
+            border: 1px solid #e9edf2;
+        }
+        .status-item .check { color: #16a34a; font-size: 1.2rem; }
+        .status-item .cross { color: #dc2626; font-size: 1.2rem; }
+        
+        /* ===== Фотогалерея ===== */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin: 16px 0;
+        }
+        .gallery-item {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #e9edf2;
+            transition: all 0.3s ease;
+        }
+        .gallery-item:hover { transform: scale(1.02); box-shadow: 0 8px 30px rgba(0,0,0,0.12); }
+        .gallery-item .placeholder-img {
+            width: 100%;
+            height: 180px;
+            background: linear-gradient(135deg, #e2e8f0, #f1f5f9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: #94a3b8;
+        }
+        .gallery-item .placeholder-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .gallery-item .caption {
+            padding: 10px 14px;
+            font-size: 0.85rem;
+            color: #0b1a33;
+            font-weight: 500;
+        }
+        .gallery-item .caption small {
+            display: block;
+            color: #64748b;
+            font-weight: 400;
+            font-size: 0.75rem;
+            margin-top: 4px;
+        }
+        
+        /* ===== Форма ===== */
+        .form-box {
+            background: #fff;
+            border-radius: 16px;
+            padding: 36px;
+            border: 1px solid #e9edf2;
+            max-width: 560px;
+            margin: 0 auto;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+        }
+        .form-box h3 { font-size: 1.4rem; margin-bottom: 6px; }
+        .form-box p { color: #64748b; margin-bottom: 20px; font-size: 0.95rem; }
+        .form-group { margin-bottom: 14px; }
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-bottom: 4px;
+            color: #1e293b;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            transition: border 0.3s;
+        }
+        .form-group input:focus {
+            outline: none;
+            border-color: #fbbf24;
+            box-shadow: 0 0 0 3px rgba(251,191,36,0.2);
+        }
+        .form-group .checkbox {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.85rem;
+            color: #475569;
+        }
+        .form-group .checkbox input { width: auto; }
+        .btn-submit {
+            width: 100%;
+            padding: 14px;
+            background: #0b1a33;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: background 0.3s;
+            cursor: pointer;
+        }
+        .btn-submit:hover { background: #1a3a5c; }
+        
+        /* ===== Toast ===== */
+        .toast {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #16a34a;
+            color: #fff;
+            padding: 14px 22px;
+            border-radius: 12px;
+            font-weight: 600;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            z-index: 9999;
+            transform: translateX(120%);
+            transition: transform 0.5s ease;
+            font-size: 0.95rem;
+        }
+        .toast.show { transform: translateX(0); }
+        .toast.error { background: #dc2626; }
+        
+        /* ===== FOOTER ===== */
+        .footer {
+            background: #0b1a33;
+            color: #94a3b8;
+            padding: 30px 0;
+            border-top: 2px solid #fbbf24;
+        }
+        .footer .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        .footer .col { max-width: 280px; }
+        .footer .col h4 { color: #fff; font-size: 0.85rem; margin-bottom: 6px; }
+        .footer .col p, .footer .col a {
+            font-size: 0.8rem;
+            color: #94a3b8;
+            text-decoration: none;
+        }
+        .footer .col a:hover { color: #fbbf24; }
+        .footer .copyright {
+            width: 100%;
+            text-align: center;
+            font-size: 0.7rem;
+            padding-top: 16px;
+            border-top: 1px solid #1e293b;
+            margin-top: 16px;
+            color: #64748b;
+        }
+        .lang-switch {
+            display: flex;
+            gap: 8px;
+            margin-top: 8px;
+        }
+        .lang-switch a {
+            color: #94a3b8;
+            text-decoration: none;
+            padding: 2px 10px;
+            border-radius: 4px;
+            border: 1px solid #1e293b;
+            font-size: 0.75rem;
+            transition: all 0.3s;
+        }
+        .lang-switch a:hover,
+        .lang-switch a.active {
+            color: #fbbf24;
+            border-color: #fbbf24;
+            background: rgba(251,191,36,0.1);
+        }
+        
+        /* ===== Адаптив ===== */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 1.8rem; }
+            .hero p { font-size: 0.95rem; }
+            .hero-stats .stat .number { font-size: 1.3rem; }
+            .section-title { font-size: 1.4rem; }
+            .form-box { padding: 20px; }
+            .grid-2 { grid-template-columns: 1fr; }
+            .footer .container { flex-direction: column; text-align: center; }
+            .gallery { grid-template-columns: 1fr 1fr; }
+            .lang-switch { justify-content: center; }
+        }
+        @media (max-width: 480px) {
+            .gallery { grid-template-columns: 1fr; }
+            .hero-stats { gap: 12px; }
+            .btn { padding: 10px 20px; font-size: 0.85rem; }
+        }
+        
+        /* ===== Анимации ===== */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeUp 0.8s ease forwards;
+        }
+        @keyframes fadeUp {
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
+        
+        /* ===== PDF контент ===== */
+        #pdfContent {
+            display: none;
+            padding: 30px;
+            background: #fff;
+            font-size: 11px;
+            line-height: 1.6;
+        }
+        #pdfContent h1 { font-size: 20px; }
+        #pdfContent h2 { font-size: 16px; margin-top: 16px; }
+        #pdfContent table { width: 100%; border-collapse: collapse; font-size: 10px; }
+        #pdfContent table th, #pdfContent table td {
+            border: 1px solid #000;
+            padding: 4px 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+<!-- ===== КОНФИДЕНЦИАЛЬНОСТЬ ===== -->
+<div class="confidential-ribbon">🔒 Конфиденциально — только для инвесторов</div>
+
+<!-- ===== HERO ===== -->
+<header class="hero">
+    <div class="container">
+        <div class="hero-badge">📋 Заявка на статус резидента СЭЗ «Alatau» подана</div>
+        <h1>
+            Производство подгузников <br />
+            для взрослых <span>в СЭЗ «Alatau»</span>
+        </h1>
+        <p>
+            Импортозамещение с государственной поддержкой (постфинансирование). <br />
+            Первое производство в Казахстане. Потенциальные поставки в рамках ГОБМП.
+        </p>
+        
+        <div class="hero-stats">
+            <div class="stat"><span class="number">~31%</span><span class="label">IRR (годовой)</span></div>
+            <div class="stat"><span class="number">24</span><span class="label">мес. окупаемость</span></div>
+            <div class="stat"><span class="number">1.25</span><span class="label">млрд тг — CAPEX</span></div>
+            <div class="stat"><span class="number">2.2</span><span class="label">млн шт / мес — мощность</span></div>
+        </div>
+        
+        <div class="btn-group">
+            <a href="#contact" class="btn btn-primary">📄 Получить инвестиционные материалы</a>
+            <button onclick="generatePDF()" class="btn btn-pdf">📥 Скачать меморандум (PDF)</button>
+            <a href="#b2g" class="btn btn-secondary">🏛️ B2G каналы</a>
+        </div>
+        
+        <div class="lang-switch">
+            <a href="#" class="active">Русский</a>
+            <a href="?lang=kz">Қазақша</a>
+            <a href="?lang=en">English</a>
+        </div>
+    </div>
+</header>
+
+<!-- ===== СЕКЦИЯ: СТАТУС И ГАРАНТИИ ===== -->
+<section id="status">
+    <div class="container">
+        <h2 class="section-title">Юридический статус и <span class="highlight">подтверждение</span></h2>
+        <p class="section-subtitle">
+            Проект реализуется с учетом актуальных требований законодательства РК и мер государственной поддержки.
+        </p>
+        
+        <div class="grid-3">
+            <div class="card fade-in delay-1">
+                <span class="icon">📋</span>
+                <h3>Реестр отечественных товаропроизводителей</h3>
+                <p>Вместо СТ-КЗ (утрачивает силу с 01.01.2026). Подача заявки через ИС с ЭЦП, цифровая верификация, выездная оценка.</p>
+                <span class="badge badge-warning">В процессе</span>
+            </div>
+            <div class="card fade-in delay-2">
+                <span class="icon">🏛️</span>
+                <h3>Заявка на статус резидента СЭЗ</h3>
+                <p>Подана инвестиционная заявка в УК СЭЗ «Alatau». Бизнес-план на рассмотрении комиссии.</p>
+                <span class="badge badge-warning">На рассмотрении</span>
+            </div>
+            <div class="card fade-in delay-3">
+                <span class="icon">⚖️</span>
+                <h3>Соответствие требованиям QazIndustry</h3>
+                <p>Отсутствие налоговой задолженности. Стаж работы ≥1 года. Рост налоговых отчислений за 3 года.</p>
+                <span class="badge">Подтверждено</span>
+            </div>
+        </div>
+        
+        <div class="status-grid">
+            <div class="status-item"><span class="check">✅</span> Работа ≥1 года до подачи заявки</div>
+            <div class="status-item"><span class="check">✅</span> Отсутствие налоговой задолженности</div>
+            <div class="status-item"><span class="check">✅</span> Рост налоговых отчислений за 3 года</div>
+            <div class="status-item"><span class="check">✅</span> Удвоение дохода от суммы господдержки</div>
+            <div class="status-item"><span class="check">✅</span> Код ТН ВЭД 9619 00 890 9</div>
+            <div class="status-item"><span class="check">✅</span> Целевое назначение оборудования</div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== СЕКЦИЯ: ФОТОГАЛЕРЕЯ ===== -->
+<section id="gallery" style="background:#f1f5f9;">
+    <div class="container">
+        <h2 class="section-title">Производство и <span class="highlight">оборудование</span></h2>
+        <p class="section-subtitle">Фотофиксация для верификации инвестиций (требование QazIndustry)</p>
+        
+        <div class="gallery">
+            <div class="gallery-item">
+                <div class="placeholder-img">
+                    <img src="https://via.placeholder.com/400x180/1a3a5c/ffffff?text=🔧+Линия+подгузников" alt="Производственная линия" />
+                </div>
+                <div class="caption">
+                    Автоматическая линия (220–250 шт/мин)
+                    <small>Серийный номер: AD-2026-001</small>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="placeholder-img">
+                    <img src="https://via.placeholder.com/400x180/0b1a33/fbbf24?text=🏷️+Шильдик" alt="Шильдик оборудования" />
+                </div>
+                <div class="caption">
+                    Шильдик — верификация инвестиций
+                    <small>Заводской номер: SN-8842-XL</small>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="placeholder-img">
+                    <img src="https://via.placeholder.com/400x180/1e293b/f8fafc?text=🏗️+Строительство" alt="Строительство цеха" />
+                </div>
+                <div class="caption">
+                    Строительство корпуса (мес. 1–5)
+                    <small>Площадь ~800 м²</small>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="placeholder-img">
+                    <img src="https://via.placeholder.com/400x180/16a34a/ffffff?text=📦+Продукция" alt="Готовая продукция" />
+                </div>
+                <div class="caption">
+                    Готовая продукция — подгузники L/XL
+                    <small>DataMatrix маркировка</small>
+                </div>
+            </div>
+        </div>
+        
+        <div style="background:#fef3c7; border-radius:12px; padding:14px; border-left:4px solid #d97706; margin-top:10px;">
+            <p style="font-size:0.85rem; color:#92400e; margin:0;">
+                📸 <strong>Для QazIndustry:</strong> Все серийные номера (шильдики) зафиксированы и включены в инвестиционную заявку.
+                Фотоотчет подтверждает целевое использование оборудования.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== СЕКЦИЯ: ЭКОНОМИКА И ЛЬГОТЫ ===== -->
+<section id="economics">
+    <div class="container">
+        <h2 class="section-title">Государственная поддержка и <span class="highlight">налоговые льготы</span></h2>
+        <p class="section-subtitle">Постфинансирование — сначала оплата, потом возмещение</p>
+        
+        <div class="grid-2">
+            <div class="card" style="border-left:4px solid #0b1a33;">
+                <h3>💰 QazIndustry — компенсация затрат</h3>
+                <ul style="list-style:none; margin-top:10px; font-size:0.92rem; color:#1e293b;">
+                    <li style="padding:4px 0;">• <strong>До 40%</strong> на оборудование (но не более 60 млн тг/год)</li>
+                    <li style="padding:4px 0;">• <strong>До 50%</strong> на продвижение и сертификацию</li>
+                    <li style="padding:4px 0;">• <strong>Постфинансирование</strong> — только фактические расходы</li>
+                    <li style="padding:4px 0;">• Глубина возмещения — <strong>до 24 месяцев</strong></li>
+                    <li style="padding:4px 0;">• <strong>Лимит 60 млн тг</strong> в календарный год</li>
+                </ul>
+                <span class="badge badge-warning">Требуется соблюдение условий</span>
+            </div>
+            
+            <div class="card" style="border-left:4px solid #d97706;">
+                <h3>🏛️ СЭЗ «Alatau» — налоговые преференции</h3>
+                <ul style="list-style:none; margin-top:10px; font-size:0.92rem; color:#1e293b;">
+                    <li style="padding:4px 0;">• <strong>КПН 0%</strong> — на весь горизонт</li>
+                    <li style="padding:4px 0;">• <strong>НДС 0%</strong> — реализация на территории СЭЗ</li>
+                    <li style="padding:4px 0;">• <strong>Земельный налог 0%</strong></li>
+                    <li style="padding:4px 0;">• <strong>Налог на имущество 0%</strong></li>
+                    <li style="padding:4px 0;">• <strong>ИПН 0%</strong> для работников-резидентов СЭЗ</li>
+                </ul>
+                <span class="badge badge-warning">При статусе резидента</span>
+            </div>
+        </div>
+        
+        <div style="margin-top:20px; background:#fef3c7; border-radius:12px; padding:16px; border:1px solid #fcd34d;">
+            <p style="font-size:0.9rem; color:#92400e; margin:0;">
+                ⚠️ <strong>Важно:</strong> Утрата статуса СЭЗ влечет доначисление налогов за весь льготный период. 
+                Мониторинг KPI по договору с УК СЭЗ обязателен.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== СЕКЦИЯ: ЦИФРЫ ===== -->
+<section id="numbers" style="background:#f1f5f9;">
+    <div class="container">
+        <h2 class="section-title">Ключевые <span class="highlight">финансовые показатели</span></h2>
+        <p class="section-subtitle">Базовый сценарий (84 месяца)</p>
+        
+        <div class="grid-3">
+            <div class="card" style="text-align:center; border-bottom:4px solid #fbbf24;">
+                <div style="font-size:2.2rem;font-weight:800;color:#0b1a33;">1 255</div>
+                <p style="font-weight:600;color:#475569;">млн тг — CAPEX</p>
+                <p style="font-size:0.8rem;color:#94a3b8;">~2,6 млн USD</p>
+            </div>
+            <div class="card" style="text-align:center; border-bottom:4px solid #fbbf24;">
+                <div style="font-size:2.2rem;font-weight:800;color:#0b1a33;">24</div>
+                <p style="font-weight:600;color:#475569;">мес. — Окупаемость (PP)</p>
+                <p style="font-size:0.8rem;color:#94a3b8;">DPP ~30–33 мес.</p>
+            </div>
+            <div class="card" style="text-align:center; border-bottom:4px solid #fbbf24;">
+                <div style="font-size:2.2rem;font-weight:800;color:#0b1a33;">~31%</div>
+                <p style="font-weight:600;color:#475569;">IRR (годовой)</p>
+                <p style="font-size:0.8rem;color:#94a3b8;">NPV ~28–32 млрд тг</p>
+            </div>
+        </div>
+        
+        <div style="margin-top:16px; display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px; text-align:center;">
+            <div class="card"><strong style="font-size:1.2rem;">~35–40%</strong><br /><span style="color:#475569;font-size:0.85rem;">EBITDA margin (год 2)</span></div>
+            <div class="card"><strong style="font-size:1.2rem;">84 200</strong><br /><span style="color:#475569;font-size:0.85rem;">шт/мес — BEP</span></div>
+            <div class="card"><strong style="font-size:1.2rem;">2 205 000</strong><br /><span style="color:#475569;font-size:0.85rem;">шт/мес — мощность</span></div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== СЕКЦИЯ: РЫНОК ===== -->
+<section id="market">
+    <div class="container">
+        <h2 class="section-title">Рынок: <span class="highlight">100% импорт</span> → импортозамещение</h2>
+        <p class="section-subtitle">Потенциальный государственный спрос</p>
+        
+        <div class="grid-2">
+            <div class="card">
+                <h3>📊 Объем рынка</h3>
+                <ul style="list-style:none; margin-top:8px; font-size:0.92rem;">
+                    <li style="padding:5px 0; border-bottom:1px solid #e9edf2;">• Получатели: <strong>75 000 чел.</strong></li>
+                    <li style="padding:5px 0; border-bottom:1px solid #e9edf2;">• Норматив: <strong>4 шт/сутки</strong> (Приказ №287)</li>
+                    <li style="padding:5px 0; border-bottom:1px solid #e9edf2;">• Госзакупки: <strong>~109,5 млн шт/год</strong></li>
+                    <li style="padding:5px 0;">• Производство в РК: <strong>ОТСУТСТВУЕТ</strong></li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>🎯 Потенциал проекта</h3>
+                <ul style="list-style:none; margin-top:8px; font-size:0.92rem;">
+                    <li style="padding:5px 0; border-bottom:1px solid #e9edf2;">• Доля рынка (год 3): <strong>12–18%</strong></li>
+                    <li style="padding:5px 0; border-bottom:1px solid #e9edf2;">• Потенциальный заказчик: <strong>СК-Фармация</strong></li>
+                    <li style="padding:5px 0; border-bottom:1px solid #e9edf2;">• Оффтейк: <strong>до 500 000 шт/закупку</strong></li>
+                    <li style="padding:5px 0;">• Предельная цена: <strong>374 тг/шт</strong></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div style="margin-top:16px; background:#dcfce7; padding:14px 18px; border-radius:12px; border-left:4px solid #16a34a;">
+            <p style="font-weight:600; color:#166534; font-size:0.95rem;">✅ Приоритет локального содержания (с 4 апреля 2026):</p>
+            <p style="color:#14532d; font-size:0.9rem;">При равной цене предпочтение отдается отечественным товаропроизводителям (доля локального содержания ≥ 30%).</p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== СЕКЦИЯ: ПРОДУКТ И ТЕХНОЛОГИЯ ===== -->
+<section id="product" style="background:#f1f5f9;">
+    <div class="container">
+        <h2 class="section-title">Продукт и <span class="highlight">технология</span></h2>
+        <p class="section-subtitle">Автоматическая линия (КНР), код ТН ВЭД 9619 00 890 9</p>
+        
+        <div class="grid-2">
+            <div class="card">
+                <h3>📦 Продуктовая линейка</h3>
+                <ul style="list-style:none; margin-top:8px; font-size:0.92rem;">
+                    <li style="padding:4px 0;">• Размеры: <strong>L, XL</strong></li>
+                    <li style="padding:4px 0;">• Абсорбция: до <strong>10 капель</strong> (ночной)</li>
+                    <li style="padding:4px 0;">• SAP-полимер: <strong>28–30 г</strong></li>
+                    <li style="padding:4px 0;">• Регистрация: <strong>МИ класс 1 (ЕАЭС)</strong></li>
+                    <li style="padding:4px 0;">• Маркировка: <strong>DataMatrix</strong></li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>⚙️ Производственная линия</h3>
+                <ul style="list-style:none; margin-top:8px; font-size:0.92rem;">
+                    <li style="padding:4px 0;">• Скорость: <strong>220–250 шт/мин</strong></li>
+                    <li style="padding:4px 0;">• Мощность: <strong>2 205 000 шт/мес</strong> (1 смена)</li>
+                    <li style="padding:4px 0;">• КПД: <strong>85%</strong>, брак ≤ 2%</li>
+                    <li style="padding:4px 0;">• Стоимость: <strong>~748 млн тг</strong></li>
+                    <li style="padding:4px 0;">• Монтаж: <strong>4–6 недель</strong></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div style="margin-top:16px; background:#fff; border-radius:12px; padding:16px; border:1px solid #e9edf2;">
+            <p style="font-weight:600; color:#0b1a33; font-size:0.95rem;">📋 Требования к документации (QazIndustry):</p>
+            <div style="display:flex; flex-wrap:wrap; gap:12px; margin-top:8px; font-size:0.85rem; color:#475569;">
+                <span style="background:#f1f5f9; padding:4px 12px; border-radius:12px;">✅ Договор поставки с целевым назначением</span>
+                <span style="background:#f1f5f9; padding:4px 12px; border-radius:12px;">✅ Акты ввода в эксплуатацию</span>
+                <span style="background:#f1f5f9; padding:4px 12px; border-radius:12px;">✅ Платежи с идентичными номерами</span>
+                <span style="background:#f1f5f9; padding:4px 12px; border-radius:12px;">✅ Фотоотчет с серийными номерами</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== СЕКЦИЯ: B2G КАНАЛЫ (СК-ФАРМАЦИЯ + ALEUMET) ===== -->
+<section id="b2g" style="background:#f1f5f9;">
+    <div class="container">
+        <h2 class="section-title">Государственные <span class="highlight">каналы сбыта</span></h2>
+        <p class="section-subtitle">Потенциальные каналы поставок медицинских изделий</p>
+
+        <!-- СК-Фармация -->
+        <div style="background:#fff; border-radius:12px; padding:24px; margin-bottom:20px; border-left:4px solid #0b1a33;">
+            <h3 style="font-size:1.15rem; font-weight:700;">🏛️ СК-Фармация (ГОБМП)</h3>
+            
+            <div style="background:#fef3c7; border-radius:8px; padding:10px 14px; margin:10px 0; border:1px solid #fcd34d;">
+                <p style="font-size:0.85rem; color:#92400e; margin:0;">
+                    ⚠️ <strong>Важно:</strong> Закупки осуществляются через тендеры и <strong>не гарантируют</strong> регулярных поставок.
+                </p>
+            </div>
+
+            <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:10px;">
+                <div style="padding:10px 14px; background:#f8fafc; border-radius:8px;">
+                    <div style="font-weight:700; color:#0b1a33;">4+ раз в год</div>
+                    <div style="font-size:0.8rem; color:#64748b;">Периодичность тендеров</div>
+                </div>
+                <div style="padding:10px 14px; background:#f8fafc; border-radius:8px;">
+                    <div style="font-weight:700; color:#0b1a33;">≤ 374 тг/шт</div>
+                    <div style="font-size:0.8rem; color:#64748b;">Предельная цена (Приказ МЗ РК)</div>
+                </div>
+                <div style="padding:10px 14px; background:#f8fafc; border-radius:8px;">
+                    <div style="font-weight:700; color:#0b1a33;">~500 000 шт</div>
+                    <div style="font-size:0.8rem; color:#64748b;">Потенциал одного лота</div>
+                </div>
+                <div style="padding:10px 14px; background:#f8fafc; border-radius:8px;">
+                    <div style="font-weight:700; color:#0b1a33;">+6–9 мес.</div>
+                    <div style="font-size:0.8rem; color:#64748b;">Лаг на регистрацию и тендеры</div>
+                </div>
+            </div>
+
+            <div style="margin-top:10px; padding:10px 14px; background:#f0fdf4; border-radius:8px; border-left:3px solid #16a34a;">
+                <p style="font-size:0.85rem; color:#166534; margin:0;">
+                    ✅ <strong>Преимущество:</strong> С апреля 2026 года — приоритет локального содержания при равной цене.
+                </p>
+            </div>
+            
+            <div style="margin-top:10px; padding:10px 14px; background:#fff8e7; border-radius:8px; border:1px solid #fcd34d;">
+                <p style="font-size:0.8rem; color:#92400e; margin:0;">
+                    📌 <strong>Для инвестора:</strong> В финмодели учтен консервативный сценарий — участие в 2 из 4 тендеров.
+                    Доход от СК-Фармация — неравномерный (квартальный/полугодовой), а не ежемесячный.
+                </p>
+            </div>
+        </div>
+
+        <!-- Aleumet -->
+        <div style="background:#fff; border-radius:12px; padding:24px; border-left:4px solid #2563eb;">
+            <h3 style="font-size:1.15rem; font-weight:700;">🌐 Портал социальных услуг «Aleumet»</h3>
+
+            <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:10px; margin-top:10px;">
+                <div style="padding:10px 14px; background:#f8fafc; border-radius:8px;">
+                    <div style="font-weight:700; color:#0b1a33;">1 017</div>
+                    <div style="font-size:0.8rem; color:#64748b;">Зарегистрированных поставщиков</div>
+                </div>
+                <div style="padding:10px 14px; background:#f8fafc; border-radius:8px;">
+                    <div style="font-weight:700; color:#0b1a33;">570 000+</div>
+                    <div style="font-size:0.8rem; color:#64748b;">Мероприятий по ТСР (2025)</div>
+                </div>
+                <div style="padding:10px 14px; background:#f8fafc; border-radius:8px;">
+                    <div style="font-weight:700; color:#0b1a33;">Реестр поставщиков</div>
+                    <div style="font-size:0.8rem; color:#64748b;">Включение через региональные комиссии</div>
+                </div>
+            </div>
+
+            <div style="margin-top:10px; padding:10px 14px; background:#eff6ff; border-radius:8px; border-left:3px solid #2563eb;">
+                <p style="font-size:0.85rem; color:#1e40af; margin:0;">
+                    📌 <strong>Для проекта:</strong> Aleumet — <strong>не прямой канал продаж</strong>, а реестр поставщиков ТСР. 
+                    Включение в реестр дает право на участие в государственных закупках на уровне акиматов.
+                </p>
+            </div>
+        </div>
+
+        <!-- Итоговое резюме по B2G -->
+        <div style="background:#0b1a33; border-radius:12px; padding:18px 20px; margin-top:16px; color:#fff;">
+            <p style="font-size:0.9rem; margin:0; text-align:center;">
+                📊 <strong>Планируемая доля B2G в структуре сбыта:</strong> 
+                <span style="color:#fbbf24; font-weight:700;">до 35%</span> при условии победы в тендерах.
+                <br />
+                <span style="color:#94a3b8; font-size:0.8rem;">
+                    В финансовой модели заложен консервативный сценарий: участие в 2 из 4 тендеров.
+                </span>
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== СЕКЦИЯ: КАНАЛЫ СБЫТА (ОБЩАЯ СТРУКТУРА) ===== -->
+<section id="channels">
+    <div class="container">
+        <h2 class="section-title">Структура <span class="highlight">каналов сбыта</span></h2>
+        <p class="section-subtitle">Диверсификация продаж (цель год 3)</p>
+        
+        <div class="grid-4">
+            <div class="card" style="text-align:center;">
+                <div style="font-size:1.8rem;font-weight:800;color:#0b1a33;">до 35%</div>
+                <p style="font-weight:600;">B2G — СК-Фармация</p>
+                <p style="font-size:0.8rem;color:#64748b;">Тендерные закупки</p>
+            </div>
+            <div class="card" style="text-align:center;">
+                <div style="font-size:1.8rem;font-weight:800;color:#0b1a33;">~25%</div>
+                <p style="font-weight:600;">Аптечные сети</p>
+                <p style="font-size:0.8rem;color:#64748b;">B2B, медучреждения</p>
+            </div>
+            <div class="card" style="text-align:center;">
+                <div style="font-size:1.8rem;font-weight:800;color:#0b1a33;">~23%</div>
+                <p style="font-weight:600;">Реестр Aleumet</p>
+                <p style="font-size:0.8rem;color:#64748b;">Региональные закупки</p>
+            </div>
+            <div class="card" style="text-align:center;">
+                <div style="font-size:1.8rem;font-weight:800;color:#0b1a33;">~17%</div>
+                <p style="font-weight:600;">Онлайн + B2B</p>
+                <p style="font-size:0.8rem;color:#64748b;">Kaspi, Ozon, хосписы</p>
+            </div>
+        </div>
+        
+        <div style="margin-top:16px; background:#fff; border-radius:12px; padding:16px; border:1px solid #e9edf2;">
+            <h4 style="margin-bottom:6px; font-size:1rem;">📱 Программа «НАШ СЕКРЕТ»</h4>
+            <p style="color:#475569; font-size:0.9rem;">Реферальная программа для социальных работников и опекунов. Сбор базы конечных потребителей, обратная связь по размерному ряду и уровням абсорбции до запуска производства.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== СЕКЦИЯ: КОМАНДА ===== -->
+<section id="team" style="background:#f1f5f9;">
+    <div class="container">
+        <h2 class="section-title">Команда <span class="highlight">проекта</span></h2>
+        <p class="section-subtitle">18 квалифицированных специалистов</p>
+        
+        <div class="grid-3">
+            <div class="card"><strong>Генеральный директор</strong><br /><span style="color:#64748b;font-size:0.9rem;">Стратегия, госорганы, СЭЗ</span></div>
+            <div class="card"><strong>Технический директор</strong><br /><span style="color:#64748b;font-size:0.9rem;">Запуск линии, качество, ПНР</span></div>
+            <div class="card"><strong>Коммерческий директор</strong><br /><span style="color:#64748b;font-size:0.9rem;">B2G/B2B, тендеры</span></div>
+            <div class="card"><strong>Финансовый директор</strong><br /><span style="color:#64748b;font-size:0.9rem;">Финмодель, БДДС, налоги</span></div>
+            <div class="card"><strong>Менеджер по регуляторике</strong><br /><span style="color:#64748b;font-size:0.9rem;">Регистрация МИ, лицензии</span></div>
+            <div class="card"><strong>Операторы линии (4 чел.)</strong><br /><span style="color:#64748b;font-size:0.9rem;">+ механики, логисты, ОТК</span></div>
+        </div>
+        
+        <div style="margin-top:16px; background:#fff; border-radius:12px; padding:14px; border:1px solid #e9edf2; text-align:center;">
+            <p style="font-weight:600; font-size:0.95rem;">ФОТ (включая все отчисления): <span style="color:#0b1a33;">5 117 200 тг / мес</span></p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== СЕКЦИЯ: РИСКИ ===== -->
+<section id="risks" style="background:#f1f5f9;">
+    <div class="container">
+        <h2 class="section-title">Управление <span class="highlight">рисками</span></h2>
+        <p class="section-subtitle">Реалистичный подход к каждому вызову</p>
+        
+        <div class="grid-3">
+            <div class="card" style="border-top:4px solid #dc2626;">
+                <h3>⚠️ Задержка регистрации МИ</h3>
+                <p>Нанят CRO-консультант. Подготовка досье стартует с 1-го месяца.</p>
+            </div>
+            <div class="card" style="border-top:4px solid #f59e0b;">
+                <h3>⚠️ Инертность госзакупок (СКФ)</h3>
+                <p>В финмодели заложен лаг 6–9 месяцев. Первые продажи — в B2B и аптеки.</p>
+            </div>
+            <div class="card" style="border-top:4px solid #0b1a33;">
+                <h3>⚠️ Кассовый разрыв на старте</h3>
+                <p>Резервный буфер 15% от CAPEX (112 млн тг) и жесткий контроль ДДС.</p>
+            </div>
+        </div>
+        
+        <div style="margin-top:16px; display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:10px; font-size:0.85rem; color:#475569;">
+            <div style="background:#fff; padding:8px 14px; border-radius:8px; border:1px solid #e9edf2;">✅ Страхование оборудования All Risks</div>
+            <div style="background:#fff; padding:8px 14px; border-radius:8px; border:1px solid #e9edf2;">✅ ЗИП на 2 года</div>
+            <div style="background:#fff; padding:8px 14px; border-radius:8px; border:1px solid #e9edf2;">✅ Долгосрочные контракты на сырье</div>
+            <div style="background:#fff; padding:8px 14px; border-radius:8px; border:1px solid #e9edf2;">✅ Мониторинг KPI СЭЗ ежеквартально</div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== СЕКЦИЯ: ВЫГОДА ДЛЯ ГОСУДАРСТВА ===== -->
+<section id="government" style="background:linear-gradient(135deg,#0b1a33 0%,#1a3a5c 100%); color:#fff; padding:40px 0;">
+    <div class="container">
+        <h2 style="font-size:1.8rem; font-weight:700; text-align:center; margin-bottom:8px;">
+            🇰🇿 Выгода для <span style="color:#fbbf24;">государства</span>
+        </h2>
+        <p style="text-align:center; color:#94a3b8; font-size:0.95rem; margin-bottom:30px;">
+            Почему поддержка местного производства — это инвестиция в экономику Казахстана
+        </p>
+        
+        <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px;">
+            <div style="background:rgba(255,255,255,0.05); border-radius:12px; padding:20px; border:1px solid rgba(255,255,255,0.08); text-align:center;">
+                <div style="font-size:2.2rem; font-weight:900; color:#fbbf24;">2,6</div>
+                <p style="color:#fff; font-weight:600;">млрд тг/год</p>
+                <p style="color:#94a3b8; font-size:0.85rem;">Экономия на закупках</p>
+            </div>
+            <div style="background:rgba(255,255,255,0.05); border-radius:12px; padding:20px; border:1px solid rgba(255,255,255,0.08); text-align:center;">
+                <div style="font-size:2.2rem; font-weight:900; color:#fbbf24;">$30</div>
+                <p style="color:#fff; font-weight:600;">млн/год</p>
+                <p style="color:#94a3b8; font-size:0.85rem;">Остановка валютного оттока</p>
+            </div>
+            <div style="background:rgba(255,255,255,0.05); border-radius:12px; padding:20px; border:1px solid rgba(255,255,255,0.08); text-align:center;">
+                <div style="font-size:2.2rem; font-weight:900; color:#fbbf24;">18</div>
+                <p style="color:#fff; font-weight:600;">рабочих мест</p>
+                <p style="color:#94a3b8; font-size:0.85rem;">Налоги в бюджет</p>
+            </div>
+            <div style="background:rgba(255,255,255,0.05); border-radius:12px; padding:20px; border:1px solid rgba(255,255,255,0.08); text-align:center;">
+                <div style="font-size:2.2rem; font-weight:900; color:#fbbf24;">100%</div>
+                <p style="color:#fff; font-weight:600;">импортозамещение</p>
+                <p style="color:#94a3b8; font-size:0.85rem;">Национальная безопасность</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== СЕКЦИЯ: ФОРМА ===== -->
+<section id="contact" style="background:#f8fafc; padding:40px 0;">
+    <div class="container">
+        <div class="form-box">
+            <h3>📄 Получите полный доступ к <span style="color:#d97706;">Data Room</span></h3>
+            <p>В закрытом разделе: финансовая модель (Excel), договор с СЭЗ, спецификация оборудования, юридические заключения.</p>
+            
+            <form id="investorForm" onsubmit="sendToTelegram(event)">
+                <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" placeholder="Например: Алихан Н." required />
+                </div>
+                <div class="form-group">
+                    <label for="company">Компания</label>
+                    <input type="text" id="company" placeholder="Название организации" />
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="example@company.kz" required />
+                </div>
+                <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" placeholder="+7 777 777 77 77" />
+                </div>
+                <div class="form-group">
+                    <label class="checkbox">
+                        <input type="checkbox" required /> Я согласен с политикой конфиденциальности
+                    </label>
+                </div>
+                <button type="submit" class="btn-submit">📩 Отправить запрос на доступ</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="container">
+        <div class="col">
+            <h4>Юридический адрес</h4>
+            <p>СЭЗ «Alatau», Алматинская область, Республика Казахстан</p>
+        </div>
+        <div class="col">
+            <h4>Нормативные документы</h4>
+            <p>
+                <a href="#">Закон РК «О СЭЗ»</a><br />
+                <a href="#">Правила QazIndustry</a><br />
+                <a href="#">Приказ МЗ РК №287</a><br />
+                <a href="#">Решение ЕЭК №46</a>
+            </p>
+        </div>
+        <div class="col">
+            <h4>Конфиденциальность</h4>
+            <p>© 2026. Все права защищены.<br />Только для инвесторов.</p>
+        </div>
+        <div class="copyright">
+            ⚡ Инвестиционный проект — Производство подгузников для взрослых | СЭЗ «Alatau»
+        </div>
+    </div>
+</footer>
+
+<!-- ===== TOAST ===== -->
+<div id="toast" class="toast">✅ Заявка отправлена!</div>
+
+<!-- ===== PDF КОНТЕНТ ===== -->
+<div id="pdfContent">
+    <h1>Инвестиционный меморандум</h1>
+    <h2>Производство подгузников для взрослых</h2>
+    <p><strong>СЭЗ «Alatau» | Алматинская область, Казахстан</strong></p>
+    <p>Июнь 2026 г.</p>
+    <hr />
+    <h2>Ключевые параметры</h2>
+    <table>
+        <tr><th>Параметр</th><th>Значение</th></tr>
+        <tr><td>Продукт</td><td>Подгузники для взрослых (L, XL)</td></tr>
+        <tr><td>Код ТН ВЭД</td><td>9619 00 890 9</td></tr>
+        <tr><td>Производственная площадка</td><td>СЭЗ «Alatau», г. Алматы</td></tr>
+        <tr><td>Скорость линии</td><td>200–250 шт/мин</td></tr>
+        <tr><td>Общий объём инвестиций</td><td>1 255 590 тыс. тг</td></tr>
+        <tr><td>IRR (годовой)</td><td>~31%</td></tr>
+        <tr><td>Срок окупаемости (PP)</td><td>~24 месяца</td></tr>
+        <tr><td>Налоговые льготы</td><td>КПН 0%, НДС 0% (СЭЗ)</td></tr>
+    </table>
+    <h2>Государственная поддержка</h2>
+    <p>QazIndustry: возмещение до 40% затрат на оборудование (до 60 млн тг/год). Постфинансирование.</p>
+    <h2>Рынок</h2>
+    <p>Объем госзакупок: 109,5 млн шт/год. Производство в РК отсутствует.</p>
+    <h2>Контакты</h2>
+    <p>Для получения полной финансовой модели обращайтесь через форму на сайте.</p>
+</div>
+
+<script>
+// ==========================================
+// 1. TELEGRAM ОТПРАВКА
+// ==========================================
+function sendToTelegram(event) {
+    event.preventDefault();
+    
+    const name = document.getElementById('name').value;
+    const company = document.getElementById('company').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    
+    // ⬇️ ЗАМЕНИТЕ НА СВОИ ДАННЫЕ ⬇️
+    const BOT_TOKEN = '8123456789:ABCdefGHIjklMNOpqrsTUVwxyz';
+    const CHAT_ID = '123456789';
+    
+    const message = `📩 *НОВАЯ ЗАЯВКА С САЙТА*%0A%0A👤 Имя: ${name}%0A🏢 Компания: ${company || 'Не указана'}%0A📧 Email: ${email}%0A📞 Телефон: ${phone || 'Не указан'}%0A🌐 Проект: Подгузники для взрослых (СЭЗ Alatau)`;
+    
+    const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${message}&parse_mode=Markdown`;
+    
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            if (data.ok) {
+                showToast('✅ Заявка отправлена! Мы свяжемся с вами.', 'success');
+                document.getElementById('investorForm').reset();
+            } else {
+                showToast('❌ Ошибка: ' + data.description, 'error');
+            }
+        })
+        .catch(() => {
+            showToast('❌ Ошибка соединения. Проверьте интернет.', 'error');
+        });
+}
+
+// ==========================================
+// 2. TOAST
+// ==========================================
+function showToast(message, type = 'success') {
+    const toast = document.getElementById('toast');
+    toast.textContent = message;
+    toast.className = 'toast';
+    if (type === 'error') toast.classList.add('error');
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 5000);
+}
+
+// ==========================================
+// 3. PDF
+// ==========================================
+function generatePDF() {
+    const element = document.getElementById('pdfContent');
+    const opt = {
+        margin: [10, 10, 10, 10],
+        filename: 'Investitsionnyy_memorandum_podguzniki_Alatau.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2, letterRendering: true },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+    };
+    
+    element.style.display = 'block';
+    html2pdf().set(opt).from(element).save().then(() => {
+        element.style.display = 'none';
+        showToast('✅ PDF успешно скачан!', 'success');
+    }).catch(() => {
+        element.style.display = 'none';
+        showToast('❌ Ошибка генерации PDF.', 'error');
+    });
+}
+
+// ==========================================
+// 4. ПЕРЕКЛЮЧАТЕЛЬ ЯЗЫКА
+// ==========================================
+document.querySelectorAll('.lang-switch a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelectorAll('.lang-switch a').forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+        showToast(`🌐 Язык: ${this.textContent} (демо)`, 'success');
+    });
+});
+
+console.log('✅ Сайт-визитка обновлен!');
+console.log('📌 Для работы Telegram замените BOT_TOKEN и CHAT_ID.');
+console.log('📌 Для аналитики замените G-XXXXXXXXXX и XXXXXXXX.');
+console.log('📌 Для фото замените src ссылки на реальные изображения.');
+</script>
+
+</body>
+</html>
