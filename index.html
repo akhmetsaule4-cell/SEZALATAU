@@ -39,7 +39,6 @@
             border-bottom: none;
         }
 
-        /* ===== ШАПКА ===== */
         .header {
             background: linear-gradient(145deg, #0b1a2e 0%, #1a3550 100%);
             color: #fff;
@@ -58,7 +57,6 @@
         .header .logo h1 {
             font-size: 1.3rem;
             font-weight: 600;
-            letter-spacing: -0.5px;
         }
         .header .logo span {
             display: block;
@@ -74,19 +72,13 @@
             border-radius: 30px;
             font-size: 0.8rem;
             font-weight: 700;
-            letter-spacing: 0.5px;
             text-transform: uppercase;
         }
-        .header .badge i {
-            margin-right: 6px;
-        }
 
-        /* ===== ЗАГОЛОВКИ ===== */
         h2 {
             font-size: 2rem;
             font-weight: 700;
             margin-bottom: 20px;
-            letter-spacing: -0.5px;
             color: #0b1a2e;
         }
         h3 {
@@ -96,7 +88,6 @@
             color: #1a3550;
         }
 
-        /* ===== СЕТКА КАРТОЧЕК ===== */
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -109,11 +100,6 @@
             border-radius: 16px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
             border: 1px solid #eef2f7;
-            transition: transform 0.15s ease, box-shadow 0.2s ease;
-        }
-        .card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
         }
         .card .icon {
             font-size: 2rem;
@@ -141,11 +127,9 @@
             padding: 10px 14px;
             border-radius: 10px;
             margin-top: 12px;
-            font-size: 0.95rem;
             border-left: 4px solid #1a3550;
         }
 
-        /* ===== КАРТИНКИ ===== */
         .project-image {
             max-width: 100%;
             height: auto;
@@ -155,7 +139,6 @@
             display: block;
         }
 
-        /* ===== ТАБЛИЦЫ ===== */
         .table-wrap {
             overflow-x: auto;
             margin: 16px 0 24px;
@@ -173,7 +156,6 @@
             background: #f1f5f9;
             font-weight: 600;
             padding: 12px 16px;
-            text-align: left;
             border-bottom: 2px solid #dce2ea;
         }
         td {
@@ -184,14 +166,12 @@
             border-bottom: none;
         }
 
-        /* ===== КНОПКИ ===== */
         .btn {
             display: inline-block;
             padding: 12px 32px;
             border-radius: 40px;
             font-weight: 600;
             text-decoration: none;
-            transition: background 0.2s, transform 0.1s;
             border: none;
             cursor: pointer;
             font-size: 1rem;
@@ -202,7 +182,6 @@
         }
         .btn-gold:hover {
             background: #e09e2f;
-            transform: scale(1.02);
         }
         .btn-secondary {
             background: #e9edf2;
@@ -222,21 +201,12 @@
             flex-wrap: wrap;
         }
 
-        /* ===== БЛОК "ДЛЯ QAZINDUSTRY" ===== */
         .qaz-block {
             background: #f0f7ff;
             border-left: 6px solid #1a3550;
             padding: 20px 28px;
             border-radius: 12px;
             margin-top: 28px;
-        }
-        .qaz-block h4 {
-            color: #0b1a2e;
-            font-size: 1.1rem;
-        }
-        .qaz-block p {
-            margin-top: 6px;
-            font-size: 1rem;
         }
 
         /* ===== NDA ===== */
@@ -261,7 +231,6 @@
             width: 90%;
             padding: 40px;
             border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             max-height: 90vh;
             overflow-y: auto;
         }
@@ -281,9 +250,6 @@
             max-height: 300px;
             overflow-y: auto;
             border: 1px solid #e9edf2;
-        }
-        .nda-box .nda-text p {
-            margin-bottom: 10px;
         }
         .nda-box .nda-text ul {
             padding-left: 20px;
@@ -324,7 +290,6 @@
             text-align: center;
         }
 
-        /* ===== КОНТАКТЫ ===== */
         .contact-block {
             background: #f0f7ff;
             border: 2px solid #1a3550;
@@ -337,14 +302,10 @@
             font-size: 1.8rem;
             font-weight: 700;
             color: #1a3550;
-            letter-spacing: 1px;
         }
         .contact-block .phone a {
             color: #1a3550;
             text-decoration: none;
-        }
-        .contact-block .phone a:hover {
-            text-decoration: underline;
         }
         .contact-block .name {
             font-size: 1.2rem;
@@ -352,7 +313,6 @@
             color: #0b1a2e;
         }
 
-        /* ===== ФУТЕР ===== */
         .footer {
             background: #0b1a2e;
             color: rgba(255, 255, 255, 0.7);
@@ -403,7 +363,6 @@
 </head>
 <body>
 
-    <!-- ===== ШАПКА ===== -->
     <header class="header">
         <div class="container">
             <div class="logo">
@@ -416,7 +375,6 @@
         </div>
     </header>
 
-    <!-- ===== ГЛАВНЫЙ БАННЕР ===== -->
     <section style="padding-top: 40px; background: #fff;">
         <div class="container">
             <div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: center; justify-content: space-between;">
@@ -444,7 +402,6 @@
         </div>
     </section>
 
-    <!-- ===== ЮРИДИЧЕСКИЙ СТАТУС ===== -->
     <section style="background: #f8fafc;">
         <div class="container">
             <h2>📋 Юридический статус и подтверждение</h2>
@@ -479,14 +436,12 @@
         </div>
     </section>
 
-    <!-- ===== ПРОИЗВОДСТВО И ОБОРУДОВАНИЕ ===== -->
     <section style="background: #fff;">
         <div class="container">
             <h2>⚙️ Производство и оборудование</h2>
             <p style="margin-bottom: 20px; font-size: 1.05rem;">
                 <strong>Фотофиксация для верификации инвестиций</strong> — требование QazIndustry
             </p>
-
             <div class="grid">
                 <div class="card">
                     <span class="icon">🏗️</span>
@@ -497,7 +452,6 @@
                         <li>Готовая продукция — подгузники</li>
                         <li>DataMatrix маркировка</li>
                     </ul>
-                    <!-- ===== КАРТИНКА 1 ===== -->
                     <img src="Проектный эскиз завода ПДВ.png" alt="Проектный эскиз завода" class="project-image" />
                 </div>
                 <div class="card">
@@ -521,7 +475,6 @@
                     </ul>
                 </div>
             </div>
-
             <div class="qaz-block">
                 <h4>📸 Для QazIndustry</h4>
                 <p>
@@ -536,7 +489,6 @@
         </div>
     </section>
 
-    <!-- ===== ГОСУДАРСТВЕННАЯ ПОДДЕРЖКА ===== -->
     <section style="background: #f8fafc;">
         <div class="container">
             <h2>💰 Государственная поддержка и налоговые льготы</h2>
@@ -571,7 +523,6 @@
         </div>
     </section>
 
-    <!-- ===== КЛЮЧЕВЫЕ ФИНАНСОВЫЕ ПОКАЗАТЕЛИ ===== -->
     <section style="background: #fff;">
         <div class="container">
             <h2>📊 Ключевые финансовые показатели</h2>
@@ -587,7 +538,6 @@
         </div>
     </section>
 
-    <!-- ===== РЫНОК ===== -->
     <section style="background: #f8fafc;">
         <div class="container">
             <h2>📊 Рынок: 100% импорт → импортозамещение</h2>
@@ -617,12 +567,10 @@
                     </div>
                 </div>
             </div>
-            <!-- ===== КАРТИНКА 2 ===== -->
             <img src="Каналы сбыта 2026.png" alt="Каналы сбыта 2026" class="project-image" />
         </div>
     </section>
 
-    <!-- ===== ПРОДУКТ И ТЕХНОЛОГИЯ ===== -->
     <section style="background: #fff;">
         <div class="container">
             <h2>🧪 Продукт и технология</h2>
@@ -659,7 +607,6 @@
         </div>
     </section>
 
-    <!-- ===== ОПЕРАЦИОННАЯ МОДЕЛЬ ===== -->
     <section style="background: #f8fafc;">
         <div class="container">
             <h2>📋 Операционная модель</h2>
@@ -679,7 +626,6 @@
                 </table>
             </div>
 
-            <!-- ===== КАРТИНКА 3 ===== -->
             <img src="Дорожная карта проекта ПДВ 2026.png" alt="Дорожная карта проекта" class="project-image" />
 
             <h3 style="margin-top: 24px;">Логистика импортных партий</h3>
@@ -717,7 +663,6 @@
         </div>
     </section>
 
-    <!-- ===== КАНАЛЫ СБЫТА ===== -->
     <section style="background: #fff;">
         <div class="container">
             <h2>📈 Каналы сбыта и маркетинг</h2>
@@ -761,7 +706,6 @@
         </div>
     </section>
 
-    <!-- ===== КОМАНДА ===== -->
     <section style="background: #f8fafc;">
         <div class="container">
             <h2>👥 Команда проекта</h2>
@@ -778,7 +722,6 @@
         </div>
     </section>
 
-    <!-- ===== РИСКИ ===== -->
     <section style="background: #fff;">
         <div class="container">
             <h2>⚠️ Управление рисками</h2>
@@ -792,7 +735,6 @@
         </div>
     </section>
 
-    <!-- ===== ВЫГОДА ДЛЯ ГОСУДАРСТВА ===== -->
     <section style="background: #f8fafc;">
         <div class="container">
             <h2>🇰🇿 Выгода для государства</h2>
@@ -806,7 +748,6 @@
         </div>
     </section>
 
-    <!-- ===== DATA ROOM + СКАЧИВАНИЕ PDF ===== -->
     <section id="download-pdf" style="background: #0b1a2e; color: #fff; border-bottom: none;">
         <div class="container text-center">
             <div style="max-width: 700px; margin: 0 auto;">
@@ -827,7 +768,6 @@
         </div>
     </section>
 
-    <!-- ===== КОНТАКТЫ ===== -->
     <section style="background: #fff; border-bottom: none; padding: 30px 0;">
         <div class="container">
             <div class="contact-block">
@@ -843,7 +783,6 @@
         </div>
     </section>
 
-    <!-- ===== ФУТЕР ===== -->
     <footer class="footer">
         <div class="container">
             <div class="badge-conf">🔒 КОНФИДЕНЦИАЛЬНО — ТОЛЬКО ДЛЯ ИНВЕСТОРОВ</div>
@@ -852,7 +791,7 @@
         </div>
     </footer>
 
-    <!-- ===== NDA ОКНО ===== -->
+    <!-- ===== NDA ===== -->
     <div class="nda-overlay" id="ndaOverlay">
         <div class="nda-box">
             <h2>🔒 Соглашение о конфиденциальности (NDA)</h2>
@@ -878,7 +817,6 @@
         </div>
     </div>
 
-    <!-- ===== СКРИПТЫ ===== -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const overlay = document.getElementById('ndaOverlay');
@@ -887,7 +825,6 @@
             const cancelBtn = document.getElementById('ndaCancel');
             const downloadBtns = document.querySelectorAll('#downloadBtn, #downloadBtn2');
 
-            // Открываем NDA при клике на любую кнопку скачивания
             downloadBtns.forEach(function(btn) {
                 btn.addEventListener('click', function(e) {
                     e.preventDefault();
@@ -898,7 +835,6 @@
                 });
             });
 
-            // Активируем кнопку при принятии NDA
             checkbox.addEventListener('change', function() {
                 if (checkbox.checked) {
                     confirmBtn.style.pointerEvents = 'auto';
@@ -909,19 +845,16 @@
                 }
             });
 
-            // Закрываем NDA
             cancelBtn.addEventListener('click', function() {
                 overlay.classList.remove('active');
             });
 
-            // Закрываем при клике вне окна
             overlay.addEventListener('click', function(e) {
                 if (e.target === overlay) {
                     overlay.classList.remove('active');
                 }
             });
 
-            // Отслеживаем скачивание в Google Analytics
             confirmBtn.addEventListener('click', function() {
                 if (typeof gtag !== 'undefined') {
                     gtag('event', 'generate_lead', {
@@ -929,7 +862,6 @@
                         'event_label': 'PDF Download - After NDA',
                         'value': 1
                     });
-                    console.log('✅ GA событие: PDF Download after NDA');
                 }
             });
         });
