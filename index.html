@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <!-- ===== GOOGLE ANALYTICS ===== -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-16RL02508G"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-16RL02508G');
+    </script>
+    <!-- ===== END GOOGLE ANALYTICS ===== -->
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Производство подгузников для взрослых | СЭЗ Алатау</title>
@@ -284,7 +294,7 @@
                         <div><span style="font-weight: 700; font-size: 1.6rem; color: #1a3550;">2.2</span><br>млн шт / мес — мощность</div>
                     </div>
                     <div class="flex-center" style="justify-content: flex-start;">
-                        <a href="#download-pdf" class="btn btn-gold">📄 Скачать инвестиционный меморандум (PDF)</a>
+                        <a href="#download-pdf" class="btn btn-gold ga-download-pdf">📄 Скачать инвестиционный меморандум (PDF)</a>
                     </div>
                 </div>
                 <div style="flex: 0 0 auto; background: #eef2f7; padding: 20px 28px; border-radius: 20px; text-align: center; min-width: 200px;">
@@ -662,7 +672,7 @@
                     В закрытом разделе: финансовая модель (Excel), договор с СЭЗ, спецификация оборудования, юридические заключения.
                 </p>
                 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px;">
-                    <a href="Инвестиционный%20меморандум%20Подгузники%20СЭЗ%20Алатау%202026.pdf" download class="btn btn-gold" style="font-size: 1.1rem; padding: 14px 40px;">
+                    <a href="Инвестиционный%20меморандум%20Подгузники%20СЭЗ%20Алатау%202026.pdf" download class="btn btn-gold ga-download-pdf" style="font-size: 1.1rem; padding: 14px 40px;">
                         📥 Скачать инвестиционный меморандум (PDF)
                     </a>
                 </div>
@@ -691,5 +701,29 @@
         </div>
     </footer>
 
+    <!-- ===== ОТСЛЕЖИВАНИЕ КЛИКОВ ===== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Отслеживаем все кнопки с классом ga-download-pdf
+            var downloadButtons = document.querySelectorAll('.ga-download-pdf');
+            downloadButtons.forEach(function(btn) {
+                btn.addEventListener('click', function(e) {
+                    if (typeof gtag !== 'undefined') {
+                        gtag('event', 'generate_lead', {
+                            'event_category': 'engagement',
+                            'event_label': 'PDF Download - Investment Memorandum',
+                            'value': 1
+                        });
+                        console.log('✅ GA событие: PDF Download');
+                    } else {
+                        console.warn('⚠️ GA не загружен');
+                    }
+                });
+            });
+
+            // Дополнительно: отслеживаем клики по кнопке "Скачать" в футере (если она есть)
+            // Можно добавить другие кнопки по аналогии
+        });
+    </script>
 </body>
 </html>
